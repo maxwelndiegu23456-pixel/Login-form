@@ -28,4 +28,11 @@
         </form>
     </div>
 </body>
+    <script>
+    document.querySelector('.login-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // This stops the page from just refreshing
+        const email = document.querySelector('input[type="email"]').value;
+        alert("Welcome back, " + email + "! Access Granted.");
+    });
+</script>
 </html>
